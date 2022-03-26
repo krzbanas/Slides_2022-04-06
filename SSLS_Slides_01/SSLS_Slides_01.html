@@ -3,25 +3,28 @@
   <head>
     <title>Hello my name is Krzysztof</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Krzysztof Banas" />
-    <meta name="date" content="2022-03-25" />
+    <meta name="author" content="Krzysztof" />
+    <meta name="date" content="2022-03-26" />
     <script src="SSLS_Slides_01_files/header-attrs/header-attrs.js"></script>
     <link href="SSLS_Slides_01_files/remark-css/default.css" rel="stylesheet" />
     <link href="SSLS_Slides_01_files/remark-css/default-fonts.css" rel="stylesheet" />
+    <script src="SSLS_Slides_01_files/htmlwidgets/htmlwidgets.js"></script>
+    <script src="SSLS_Slides_01_files/jquery/jquery.min.js"></script>
+    <link href="SSLS_Slides_01_files/leaflet/leaflet.css" rel="stylesheet" />
+    <script src="SSLS_Slides_01_files/leaflet/leaflet.js"></script>
+    <link href="SSLS_Slides_01_files/leafletfix/leafletfix.css" rel="stylesheet" />
+    <script src="SSLS_Slides_01_files/proj4/proj4.min.js"></script>
+    <script src="SSLS_Slides_01_files/Proj4Leaflet/proj4leaflet.js"></script>
+    <link href="SSLS_Slides_01_files/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+    <script src="SSLS_Slides_01_files/leaflet-binding/leaflet.js"></script>
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-.title[
 # Hello my name is Krzysztof
-]
-.author[
-### Krzysztof Banas
-]
-.date[
-### 2022-03-25
-]
+### Krzysztof
+### 2022-03-26
 
 ---
 
@@ -39,7 +42,7 @@ install.packages("leaflet")
 
 &lt;!-- introduce yourself here --&gt;
 
-Hello my name is Krzysztof Banas!
+Hello my name is Krzysztof!
 
 Say something about what you do, what you use R Markdown for, your favorite R package, etc.
 
@@ -77,11 +80,9 @@ topyears %&gt;%
 ```
 
 ```
-## # A tibble: 1 x 5
-## # Groups:   name [1]
-##    year sex   name       n    prop
-##   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;  &lt;int&gt;   &lt;dbl&gt;
-## 1  1979 F     Alison  2936 0.00170
+## # A tibble: 0 × 5
+## # Groups:   name [0]
+## # … with 5 variables: year &lt;dbl&gt;, sex &lt;chr&gt;, name &lt;chr&gt;, n &lt;int&gt;, prop &lt;dbl&gt;
 ```
 
 
@@ -92,11 +93,11 @@ topyears %&gt;%
 ```
 
 ```
-## # A tibble: 1 x 5
+## # A tibble: 1 × 5
 ## # Groups:   name [1]
-##    year sex   name        n    prop
-##   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;   &lt;int&gt;   &lt;dbl&gt;
-## 1  1995 F     Allison  8126 0.00423
+##    year sex   name      n     prop
+##   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt;    &lt;dbl&gt;
+## 1  1961 F     Chris  1568 0.000755
 ```
 
 
@@ -125,6 +126,9 @@ ggplot(namedata,
 library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(lat = 30.2621, lng = -97.7382, zoom = 17)
 ```
+
+<div id="htmlwidget-b58d704261e852606e7c" style="width:504px;height:504px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b58d704261e852606e7c">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[30.2621,-97.7382],17,[]]},"evals":[],"jsHooks":[]}</script>
 
 
 
@@ -172,19 +176,6 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
-// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
-// screen reader (see PR #262)
-(function(d) {
-  let res = {};
-  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
-    const t = tr.querySelector('td:nth-child(2)').innerText;
-    tr.querySelectorAll('td:first-child .key').forEach(key => {
-      const k = key.innerText;
-      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
-    });
-  });
-  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
-})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

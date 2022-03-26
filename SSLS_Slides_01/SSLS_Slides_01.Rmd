@@ -1,11 +1,11 @@
 ---
 title: "Hello my name is Krzysztof"
-author: "Krzysztof Banas"
+author: "Krzysztof"
 date: "`r Sys.Date()`"
 output: xaringan::moon_reader
 params:
-  name1: "Alison" 
-  name2: "Allison"
+  name1: "Krzysztof" 
+  name2: "Chris"
 ---
 
 <!-- edit name1 and name2 in the YAML above -->
@@ -85,7 +85,7 @@ ggplot(namedata,
 <!-- where are you from? -->
 
 
-```{r eval = FALSE}
+```{r eval = TRUE}
 # erase this chunk option if you want to include a map
 library(leaflet)
 leaflet() %>% addTiles() %>% setView(lat = 30.2621, lng = -97.7382, zoom = 17)
