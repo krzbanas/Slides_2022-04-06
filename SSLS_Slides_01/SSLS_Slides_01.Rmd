@@ -15,12 +15,7 @@ options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 library(tidyverse) # load tidyverse package
 library(babynames) # load babynames package
-#library(leaflet) # uncomment to use if you install
-```
-
-```{r eval = FALSE}
-# optional package installs if you want to do more below
-install.packages("leaflet")
+library(leaflet) # uncomment to use if you install
 ```
 
 
@@ -37,7 +32,7 @@ knitr::include_graphics("https://github.com/USERNAME.png") # update USERNAME her
 ```
 
 
-
+---
 <!-- we make the data here -->
 
 ```{r filterdata}
@@ -56,7 +51,7 @@ topyears <- namedata %>%
   top_n(1, prop) 
 ```
 
-
+---
 ```{r topyear-name1}
 topyears %>% 
   filter(name == params$name1)
@@ -68,7 +63,7 @@ topyears %>%
   filter(name == params$name2)
 ```
 
-
+---
 <!-- plot name popularity over time -->
 
 
@@ -81,16 +76,52 @@ ggplot(namedata,
   geom_line() 
 ```
 
-
+---
 <!-- where are you from? -->
-
+---
 
 ```{r eval = TRUE}
 # erase this chunk option if you want to include a map
 library(leaflet)
-leaflet() %>% addTiles() %>% setView(lat = 30.2621, lng = -97.7382, zoom = 17)
+leaflet() %>% addTiles() %>% setView(lat = 1.29563, lng = 103.77502, zoom = 17)
 ```
 
 
+---
+# Datasaur
+```{r, echo=FALSE}
+knitr::include_graphics("img/DinoSequentialSmaller.gif")
+```
+
+---
+# Boxplots
+```{r, echo=FALSE}
+knitr::include_graphics("img/boxplots.gif")
+```
+
+
+---
+# Boxplots and Violin Plots
+```{r, echo=FALSE}
+knitr::include_graphics("img/BoxViolinSmaller.gif")
+```
+
+
+---
+# Two plots side by side
+
+.pull-left[
+## Left side
+```{r,  echo=FALSE}
+knitr::include_graphics("img/SmallChange.gif")
+```
+]
+
+.pull-right[  
+## Right side
+```{r, ,  echo=FALSE}
+knitr::include_graphics("img/sheep.jpg")
+```
+]
 
 
