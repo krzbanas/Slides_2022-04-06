@@ -1,12 +1,20 @@
 ---
-title: "Hello my name is Krzysztof"
-author: "Krzysztof"
-date: "`r Sys.Date()`"
-output: xaringan::moon_reader
+title: "Statistically Counting Red Blood Cells "
+author: "Krzysztof Banas <br><span style = 'font-size: 70%;'>National University of Singapore<br>Singapore Synchrotron Light Source</span>"
+date: "SSLS Seminar <br> Virtual by Zoom App, 4 April 2022 14:00"
+output:
+  xaringan::moon_reader:
+    nature:
+      countIncrementalSlides: false
+      titleSlideClass: ["left", "middle", "inverse"]
+      highlightLines: true
+      highlightStyle: solarized-dark
+      countdown: 60000
 params:
-  name1: "Krzysztof" 
-  name2: "Chris"
+  name1: Krzysztof
+  name2: Chris
 ---
+
 
 <!-- edit name1 and name2 in the YAML above -->
 
@@ -64,6 +72,11 @@ topyears %>%
 ```
 
 ---
+class: inverse, middle, center
+# SCIENTIFIC METHOD
+
+
+---
 <!-- plot name popularity over time -->
 
 
@@ -85,6 +98,11 @@ ggplot(namedata,
 library(leaflet)
 leaflet() %>% addTiles() %>% setView(lat = 1.29563, lng = 103.77502, zoom = 17)
 ```
+
+
+---
+class: inverse, middle, center
+# DATASAUR
 
 
 ---
@@ -123,5 +141,68 @@ knitr::include_graphics("img/SmallChange.gif")
 knitr::include_graphics("img/sheep.jpg")
 ```
 ]
+
+---
+class: inverse, middle, center
+# RED BLOOD CELLS
+
+---
+# Single cell analysis
+```{r, ,  echo=FALSE}
+knitr::include_graphics("img/visual_overview.png")
+```
+
+---
+# Classic FTIR = diffraction limit
+
+.pull-left[
+## Abbe equation
+```{r,  echo=FALSE}
+knitr::include_graphics("img/SmallChange.gif")
+```
+]
+
+## Title
+.pull-right[ 
+```{r, ,  echo=FALSE}
+knitr::include_graphics("img/visual_overview.png")
+```
+]
+
+
+
+---
+class: inverse, middle, center
+# CONCLUSIONS
+
+
+---
+# Take home message(s)
+- scientific method is still valid approach in the reseach so: hypothise, measure, repeat!
+
+--
+
+- visualization of data is of utmost importance
+
+--
+
+- do not trust boxplots or summary statistics (mean, SD etc)
+
+--
+
+- use proper methods for hypothesis testing depending on your data type (numeric, categoric) and distribution (normal or other)
+
+--
+
+- single cells infrared characterization is not recommended with classis FTIR microscope due to diffraction limit
+
+--
+
+- novel method (optically dectected photothermal effect infrared spectroscopy) is viable alternative 
+
+
+---
+class: inverse, middle, center
+# THANK YOU
 
 
