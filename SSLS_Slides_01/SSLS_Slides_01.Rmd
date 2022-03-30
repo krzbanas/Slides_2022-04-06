@@ -77,6 +77,108 @@ class: inverse, middle, center
 
 
 ---
+SOME HISTORY
+
+- ancient Greeks (7th-3rd century BC)
+
+--
+
+- early Muslim scientists  (11th century AD)
+    - Ibn al-Haytham
+    - Abu Rayhan 
+    - al-Biruni
+    - Ibn Sina
+
+--
+
+- Robert Grosseteste, Roger Bacon, Ockham's razor (13-14th century AD)
+
+--
+
+- Galileo, Robert Boyle, Isaac Newton (17th century AD)
+
+
+---
+# GUIDELINE
+
+ - Define a question
+ 
+--
+
+ - Gather information and resources (observe)
+ 
+--
+
+ - Form an explanatory hypothesis
+ 
+--
+
+ - Test the hypothesis by performing an experiment and collecting data in a reproducible manner
+ 
+--
+
+ - Analyze the data
+ 
+--
+
+ - Interpret the data and draw conclusions that serve as a starting point for a new hypothesis
+ 
+--
+
+ - Publish results
+ 
+--
+
+ - Retest (frequently done by other scientists)
+
+
+
+---
+# GUIDELINE
+
+
+ - Define a question
+
+ - Gather information and resources (observe)
+
+ - **Form an explanatory hypothesis**
+
+ - **Test the hypothesis by performing an experiment and collecting data in a reproducible manner**
+
+ - **Analyze the data**
+
+ - **Interpret the data and draw conclusions that serve as a starting point for a new hypothesis**
+
+ - Publish results
+
+ - Retest (frequently done by other scientists)
+
+
+
+
+---
+## Other components
+
+.pull-left[
+
+- Replication
+
+- External review
+
+- Data recording and sharing
+
+- Instrumentation (Large Hardon Collider, James Webb Space Telescope, SSLS)
+]
+
+.pull-right[  
+
+```{r, ,  echo=FALSE}
+knitr::include_graphics("img/scientific_method.png")
+```
+]
+
+
+---
 <!-- plot name popularity over time -->
 
 

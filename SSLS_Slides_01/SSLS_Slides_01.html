@@ -21,21 +21,15 @@
     <textarea id="source">
 class: left, middle, inverse, title-slide
 
-<<<<<<< HEAD
 .title[
-# Hello my name is Krzysztof
+# Statistically Counting Red Blood Cells
 ]
 .author[
-### Krzysztof
+### Krzysztof Banas <br><span style="font-size: 70%;">National University of Singapore<br>Singapore Synchrotron Light Source</span>
 ]
 .date[
-### 2022-03-27
-]
-=======
-# Statistically Counting Red Blood Cells
-### Krzysztof Banas <br><span style="font-size: 70%;">National University of Singapore<br>Singapore Synchrotron Light Source</span>
 ### SSLS Seminar <br> Virtual by Zoom App, 4 April 2022 14:00
->>>>>>> 5f0253a05a1530dadf2b32096ff2e62874028e2c
+]
 
 ---
 
@@ -112,6 +106,106 @@ class: inverse, middle, center
 
 
 ---
+SOME HISTORY
+
+- ancient Greeks (7th-3rd century BC)
+
+--
+
+- early Muslim scientists  (11th century AD)
+    - Ibn al-Haytham
+    - Abu Rayhan 
+    - al-Biruni
+    - Ibn Sina
+
+--
+
+- Robert Grosseteste, Roger Bacon, Ockham's razor (13-14th century AD)
+
+--
+
+- Galileo, Robert Boyle, Isaac Newton (17th century AD)
+
+
+---
+# GUIDELINE
+
+ - Define a question
+ 
+--
+
+ - Gather information and resources (observe)
+ 
+--
+
+ - Form an explanatory hypothesis
+ 
+--
+
+ - Test the hypothesis by performing an experiment and collecting data in a reproducible manner
+ 
+--
+
+ - Analyze the data
+ 
+--
+
+ - Interpret the data and draw conclusions that serve as a starting point for a new hypothesis
+ 
+--
+
+ - Publish results
+ 
+--
+
+ - Retest (frequently done by other scientists)
+
+
+
+---
+# GUIDELINE
+
+
+ - Define a question
+
+ - Gather information and resources (observe)
+
+ - **Form an explanatory hypothesis**
+
+ - **Test the hypothesis by performing an experiment and collecting data in a reproducible manner**
+
+ - **Analyze the data**
+
+ - **Interpret the data and draw conclusions that serve as a starting point for a new hypothesis**
+
+ - Publish results
+
+ - Retest (frequently done by other scientists)
+
+
+
+
+---
+## Other components
+
+.pull-left[
+
+- Replication
+
+- External review
+
+- Data recording and sharing
+
+- Instrumentation (Large Hardon Collider, James Webb Space Telescope, SSLS)
+]
+
+.pull-right[  
+
+&lt;img src="img/scientific_method.png" width="623" /&gt;
+]
+
+
+---
 &lt;!-- plot name popularity over time --&gt;
 
 
@@ -125,7 +219,7 @@ ggplot(namedata,
   geom_line() 
 ```
 
-![](SSLS_Slides_01_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+![](SSLS_Slides_01_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
 
 ---
 &lt;!-- where are you from? --&gt;
@@ -138,18 +232,13 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(lat = 1.29563, lng = 103.77502, zoom = 17)
 ```
 
-<<<<<<< HEAD
-<div id="htmlwidget-3f5d054ffab50fa3eb94" style="width:504px;height:504px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3f5d054ffab50fa3eb94">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[1.29563,103.77502],17,[]]},"evals":[],"jsHooks":[]}</script>
-=======
-<div id="htmlwidget-51de01927a673bc93479" style="width:504px;height:504px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-51de01927a673bc93479">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[1.29563,103.77502],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-eb1e5e3a77a281a0c663" style="width:504px;height:504px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-eb1e5e3a77a281a0c663">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[1.29563,103.77502],17,[]]},"evals":[],"jsHooks":[]}</script>
 
 
 ---
 class: inverse, middle, center
 # DATASAUR
->>>>>>> 5f0253a05a1530dadf2b32096ff2e62874028e2c
 
 
 ---
