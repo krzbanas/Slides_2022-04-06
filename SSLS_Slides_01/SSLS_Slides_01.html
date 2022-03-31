@@ -7,6 +7,7 @@
     <script src="SSLS_Slides_01_files/header-attrs/header-attrs.js"></script>
     <link href="SSLS_Slides_01_files/remark-css/default.css" rel="stylesheet" />
     <link href="SSLS_Slides_01_files/remark-css/default-fonts.css" rel="stylesheet" />
+    <script src="SSLS_Slides_01_files/xaringanExtra-progressBar/progress-bar.js"></script>
     <script src="SSLS_Slides_01_files/htmlwidgets/htmlwidgets.js"></script>
     <script src="SSLS_Slides_01_files/jquery/jquery.min.js"></script>
     <link href="SSLS_Slides_01_files/leaflet/leaflet.css" rel="stylesheet" />
@@ -39,6 +40,27 @@ class: left, middle, inverse, title-slide
 
 
 
+
+<style>.xe__progress-bar__container {
+  top:0;
+  opacity: 1;
+  position:absolute;
+  right:0;
+  left: 0;
+}
+.xe__progress-bar {
+  height: 0.25em;
+  background-color: #0051BA;
+  width: calc(var(--slide-current) / var(--slide-total) * 100%);
+}
+.remark-visible .xe__progress-bar {
+  animation: xe__progress-bar__wipe 200ms forwards;
+  animation-timing-function: cubic-bezier(.86,0,.07,1);
+}
+@keyframes xe__progress-bar__wipe {
+  0% { width: calc(var(--slide-previous) / var(--slide-total) * 100%); }
+  100% { width: calc(var(--slide-current) / var(--slide-total) * 100%); }
+}</style>
 
 &lt;!-- introduce yourself here --&gt;
 
@@ -232,8 +254,8 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(lat = 1.29563, lng = 103.77502, zoom = 17)
 ```
 
-<div id="htmlwidget-eb1e5e3a77a281a0c663" style="width:504px;height:504px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-eb1e5e3a77a281a0c663">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[1.29563,103.77502],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a7ab55d48fdfc98a80c5" style="width:504px;height:504px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a7ab55d48fdfc98a80c5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[1.29563,103.77502],17,[]]},"evals":[],"jsHooks":[]}</script>
 
 
 ---

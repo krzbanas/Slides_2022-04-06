@@ -27,6 +27,10 @@ library(leaflet) # uncomment to use if you install
 ```
 
 
+```{r xaringanExtra, echo = FALSE}
+xaringanExtra::use_progress_bar(color = "#0051BA", location = "top")
+```
+
 <!-- introduce yourself here -->
 
 Hello my name is `r rmarkdown::metadata$author`!
