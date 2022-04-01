@@ -5,6 +5,7 @@ author: "Krzysztof Banas <br><span style = 'font-size: 70%;'>National University
 date: "SSLS Seminar <br> <br> Virtual by Zoom App, 7 April 2022 14:00"
 output:
   xaringan::moon_reader:
+    css: xaringan-themer.css
     nature:
       countIncrementalSlides: false
       titleSlideClass: ["left", "middle", "inverse"]
@@ -15,6 +16,8 @@ params:
   name1: Krzysztof
   name2: Chris
 ---
+
+
 
 ```{css echo=FALSE}
 .highlight-last-item > ul > li,
@@ -27,6 +30,36 @@ params:
 }
 ```
 
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#003D7C",        # NUS Blue
+  secondary_color = "#EF7C00",      # NUS Orange
+#  header_font_google = google_font("Amatic SC"),
+#  text_font_google = google_font("Crete Round"),
+  header_font_google = google_font("Cabin"),
+  text_font_google = google_font("Noto Sans"),
+  header_h1_font_size = "2.5rem",
+  header_h2_font_size = "1.75rem"
+)
+```
+
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(
+  image_url = "img/nus_logo_full-horizontal.jpg"
+)
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+
+```{r xaringan-tachyons, echo=FALSE}
+xaringanExtra::use_tachyons()
+```
 
 <!-- edit name1 and name2 in the YAML above -->
 
@@ -90,35 +123,35 @@ SOME HISTORY
 ---
 # GUIDELINE
 
- - Define a question
+ 1. Define a question
  
 --
 
- - Gather information and resources (observe)
+ 2. Gather information and resources (observe)
  
 --
 
- - Form an explanatory hypothesis
+ 3. Form an explanatory hypothesis
  
 --
 
- - Test the hypothesis by performing an experiment and collecting data in a reproducible manner
+ 4. Test the hypothesis by performing an experiment and collecting data in a reproducible manner
  
 --
 
- - Analyze the data
+ 5. Analyze the data
  
 --
 
- - Interpret the data and draw conclusions that serve as a starting point for a new hypothesis
+ 6. Interpret the data and draw conclusions that serve as a starting point for a new hypothesis
  
 --
 
- - Publish results
+ 7. Publish results
  
 --
 
- - Retest (frequently done by other scientists)
+ 8. Retest (frequently done by other scientists)
 
 
 
@@ -126,21 +159,21 @@ SOME HISTORY
 # GUIDELINE
 
 
- - Define a question
+ 1. Define a question
 
- - Gather information and resources (observe)
+ 2. Gather information and resources (observe)
 
- - **Form an explanatory hypothesis**
+ 3. **Form an explanatory hypothesis**
 
- - **Test the hypothesis by performing an experiment and collecting data in a reproducible manner**
+ 4. **Test the hypothesis by performing an experiment and collecting data in a reproducible manner**
 
- - **Analyze the data**
+ 5. **Analyze the data**
 
- - **Interpret the data and draw conclusions that serve as a starting point for a new hypothesis**
+ 6. **Interpret the data and draw conclusions that serve as a starting point for a new hypothesis**
 
- - Publish results
+ 7. Publish results
 
- - Retest (frequently done by other scientists)
+ 8. Retest (frequently done by other scientists)
 
 
 
@@ -366,6 +399,16 @@ knitr::include_graphics("img/visual_overview.png")
 ---
 ## SUMMARY
 
+---
+.bg-washed-orange.b--dark-blue.ba.bw2.br3.shadow-5.ph4.mt5[
+The only way to write good code is to write tons of bad code first. 
+Feeling shame about bad code stops you from getting to good code
+
+.tr[
+— Hadley Wickham
+]]
+
+
 
 
 
@@ -401,7 +444,7 @@ class: highlight-last-item
 
 --
 
-- novel method (optically dectected photothermal effect infrared spectroscopy) is viable alternative 
+- novel method (optically detected photothermal effect infrared spectroscopy) is viable alternative 
 
 
 ---
