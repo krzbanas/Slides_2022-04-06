@@ -1,5 +1,6 @@
 ---
-title: "Statistically Counting Red Blood Cells "
+title: "Infrared characterization of malaria-infected red blood cells"
+subtitle: "or statistically counting erythrocites" 
 author: "Krzysztof Banas <br><span style = 'font-size: 70%;'>National University of Singapore<br>Singapore Synchrotron Light Source</span>"
 date: "SSLS Seminar <br> Virtual by Zoom App, 4 April 2022 14:00"
 output:
@@ -204,6 +205,41 @@ ggplot(namedata,
 library(leaflet)
 leaflet() %>% addTiles() %>% setView(lat = 1.29563, lng = 103.77502, zoom = 17)
 ```
+
+
+---
+class: inverse, middle, center
+# NORMAL DATA
+
+---
+
+## Why this is important?
+
+Many 
+
+---
+## How to check?
+
+- visuallly
+  1. histogram
+  2. distribution
+  3. Q-Q plot
+  4. violin plot
+- by statistical tests
+  1. 
+
+---
+## What to do if we fail the test?
+
+- transform data
+  1. log
+  2. square
+  3. cubic
+- use statistical tests for not normal distributions
+
+
+
+
 
 
 ---
