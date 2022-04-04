@@ -213,7 +213,7 @@ Many
 ---
 ## How to check?
 
-- visuallly
+- visually
 
   1. histogram
   
@@ -225,22 +225,32 @@ Many
   
 - by statistical tests
 
-  1. 
+  1. Shapiro-Wilk
+  
+  2. Kolmogorov-Smirnov (Lilliefors)
+  
+  3. Jarque-Bera
+  
+  4. Anderson-Darling
+  
+  5. Cramer-von Mises
+  
+  6. Pearson chi-square
 
 ---
 ## What to do if we fail the test?
 
 - transform data
 
-  1. log
+  1. log transformation 
   
-  2. square
+  2. square root transformation
   
-  3. cubic
+  3. cube root transformation
   
 - use statistical tests for not normal distributions
 
-
+- According to Central Limit Theorem, no matter what distribution is, the sampling distribution of mean tends to be normal if the sample is large enough (n ≥ 30)
 
 
 
@@ -320,8 +330,13 @@ class: inverse, middle, center
 
 ---
 ## HOW IT WORKS
-animation
+
+<video width="640" height="480" autoplay loop controls>
+<source src="img/OPTIR.mp4" type="video/mp4">
+</video>
+
 ---
+
 
 ## MODES OF EXPERIMENT
 

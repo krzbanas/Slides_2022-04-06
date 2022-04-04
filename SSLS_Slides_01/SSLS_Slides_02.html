@@ -24,18 +24,10 @@
     <textarea id="source">
 class: left, middle, inverse, title-slide
 
-.title[
 # Infrared characterization of malaria-infected red blood cells
-]
-.subtitle[
 ## or statistically counting erythrocites
-]
-.author[
 ### Krzysztof Banas <br><span style="font-size: 70%;">National University of Singapore<br>Singapore Synchrotron Light Source</span>
-]
-.date[
 ### SSLS Seminar <br> <br> Virtual by Zoom App, 7 April 2022 14:00
-]
 
 ---
 
@@ -257,7 +249,7 @@ Many
 ---
 ## How to check?
 
-- visuallly
+- visually
 
   1. histogram
   
@@ -269,22 +261,32 @@ Many
   
 - by statistical tests
 
-  1. 
+  1. Shapiro-Wilk
+  
+  2. Kolmogorov-Smirnov (Lilliefors)
+  
+  3. Jarque-Bera
+  
+  4. Anderson-Darling
+  
+  5. Cramer-von Mises
+  
+  6. Pearson chi-square
 
 ---
 ## What to do if we fail the test?
 
 - transform data
 
-  1. log
+  1. log transformation 
   
-  2. square
+  2. square root transformation
   
-  3. cubic
+  3. cube root transformation
   
 - use statistical tests for not normal distributions
 
-
+- According to Central Limit Theorem, no matter what distribution is, the sampling distribution of mean tends to be normal if the sample is large enough (n ≥ 30)
 
 
 
@@ -348,8 +350,13 @@ class: inverse, middle, center
 
 ---
 ## HOW IT WORKS
-animation
+
+&lt;video width="640" height="480" autoplay loop controls&gt;
+&lt;source src="img/OPTIR.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
 ---
+
 
 ## MODES OF EXPERIMENT
 
@@ -478,8 +485,8 @@ class: inverse, middle, center
 }
 &lt;/style&gt;
 
-<div id="htmlwidget-2f0ab5f0eb52dc7fa6c2" style="width:432px;height:504px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2f0ab5f0eb52dc7fa6c2">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[1.29563,103.77502],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7ebfc1abf30c3e1a819e" style="width:432px;height:504px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7ebfc1abf30c3e1a819e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[1.29563,103.77502],17,[]]},"evals":[],"jsHooks":[]}</script>
 
 
 
@@ -532,19 +539,6 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
-// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
-// screen reader (see PR #262)
-(function(d) {
-  let res = {};
-  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
-    const t = tr.querySelector('td:nth-child(2)').innerText;
-    tr.querySelectorAll('td:first-child .key').forEach(key => {
-      const k = key.innerText;
-      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
-    });
-  });
-  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
-})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
