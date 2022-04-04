@@ -16,8 +16,8 @@ params:
   name1: Krzysztof
   name2: Chris
 ---
-
-
+class: inverse, middle, center
+# MOTIVATION
 
 ```{css echo=FALSE}
 .highlight-last-item > ul > li,
@@ -61,25 +61,23 @@ xaringanExtra::use_tile_view()
 xaringanExtra::use_tachyons()
 ```
 
-<!-- edit name1 and name2 in the YAML above -->
-
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 library(tidyverse) # load tidyverse package
 library(babynames) # load babynames package
 library(leaflet) # uncomment to use if you install
+library(datasauRus)
+library(ggsci)
 ```
-
 
 ```{r xaringanExtra, echo = FALSE}
 xaringanExtra::use_progress_bar(color = "#0051BA", location = "top")
 ```
 
 
----
-class: inverse, middle, center
-# MOTIVATION
+
+
 
 ---
 - bring attention to experiment design
@@ -90,7 +88,7 @@ class: inverse, middle, center
 
 - practical application of these remarks for infrared characterization of malaria infected red blood cells
 
-
+- introduce optically detected photothermal effect spectroscopy
 
 
 ---
@@ -101,11 +99,11 @@ class: inverse, middle, center
 ---
 SOME HISTORY
 
-- ancient Greeks (7th-3rd century BC)
+- ancient Greeks (7<sup>th</sup>-3<sup>rd</sup> century BC)
 
 --
 
-- early Muslim scientists  (11th century AD)
+- early Muslim scientists  (11<sup>th</sup> century AD)
     - Ibn al-Haytham
     - Abu Rayhan 
     - al-Biruni
@@ -113,11 +111,11 @@ SOME HISTORY
 
 --
 
-- Robert Grosseteste, Roger Bacon, Ockham's razor (13-14th century AD)
+- Robert Grosseteste, Roger Bacon, Ockham's razor (13-14<sup>th</sup> century AD)
 
 --
 
-- Galileo, Robert Boyle, Isaac Newton (17th century AD)
+- Galileo, Robert Boyle, Isaac Newton (17<sup>th</sup> century AD)
 
 
 ---
@@ -157,7 +155,6 @@ SOME HISTORY
 
 ---
 # GUIDELINE
-
 
  1. Define a question
 
@@ -208,7 +205,23 @@ class: inverse, middle, center
 
 ## Why this is important?
 
-Many 
+Many statistical tests rely on *assumption of normality*
+
+- one sample t-test
+
+- two sample t-test
+
+- ANOVA
+
+- linear regression
+
+- MRC
+
+- Hierarchical linear modeling
+
+
+If this assumption is violated the results of these tests become unreliable and we are unable to generalize our findings from the sample data to the overall population with confidence.
+
 
 ---
 ## How to check?
@@ -223,7 +236,7 @@ Many
   
   4. violin plot
   
-- by statistical tests
+- by formal statistical tests
 
   1. Shapiro-Wilk
   
@@ -248,9 +261,13 @@ Many
   
   3. cube root transformation
   
-- use statistical tests for not normal distributions
+  4. Box-Cox transformation
+  
+- according to Central Limit Theorem, no matter what distribution is, the sampling distribution of mean tends to be normal if the sample is large enough (n ≥ 30)  
+  
+- use statistical tests for not normal distributions (non-parametric tests)
 
-- According to Central Limit Theorem, no matter what distribution is, the sampling distribution of mean tends to be normal if the sample is large enough (n ≥ 30)
+
 
 
 
@@ -273,6 +290,36 @@ knitr::include_graphics("img/boxplots.gif")
 ```
 
 
+
+---
+
+```{r, fig.width=12}
+
+datasaurus_dozen %>%
+  ggplot(aes(x, y, color = dataset)) +
+  geom_point(show.legend = FALSE) +
+  facet_wrap(~dataset, ncol = 5)+theme_bw()+
+ scale_color_d3("category20")
+
+```
+
+
+
+---
+
+```{r, }
+
+knitr::kable(
+datasaurus_dozen %>%
+  group_by(dataset) %>%
+  summarise(across(c(x, y), list(mean = mean, sd = sd)),
+    x_y_cor = cor(x, y)))
+```
+
+
+
+
+
 ---
 # Boxplots and Violin Plots
 ```{r, echo=FALSE}
@@ -280,22 +327,7 @@ knitr::include_graphics("img/BoxViolinSmaller.gif")
 ```
 
 
----
-# Two plots side by side
 
-.pull-left[
-## Left side
-```{r,  echo=FALSE}
-knitr::include_graphics("img/SmallChange.gif")
-```
-]
-
-.pull-right[  
-## Right side
-```{r, ,  echo=FALSE}
-knitr::include_graphics("img/sheep.jpg")
-```
-]
 
 ---
 class: inverse, middle, center
@@ -311,10 +343,15 @@ knitr::include_graphics("img/visual_overview.png")
 # Classic FTIR = diffraction limit
 
 .pull-left[
-## Abbe equation
-```{r,  echo=FALSE}
-knitr::include_graphics("img/SmallChange.gif")
-```
+## Abbe formula
+
+$$\delta = \frac{0.612 \lambda}{N.A.}$$
+for $\lambda$ = 10 $\mu$m (1000 cm<sup>-1</sup>) 
+
+N.A. = 0.4 
+
+$\delta$ = 15.3  $\mu$m
+
 ]
 
 ## Title
@@ -478,6 +515,22 @@ leaflet() %>% addTiles() %>% setView(lat = 1.29563, lng = 103.77502, zoom = 17)
 ```
 
 
+---
+## DO NOT JUMP TO CONCLUSION (TOO FAST)
+
+.pull-left[
+## Left side
+```{r,  echo=FALSE}
+knitr::include_graphics("img/SmallChange.gif")
+```
+]
+
+.pull-right[  
+## Right side
+```{r, ,  echo=FALSE}
+knitr::include_graphics("img/sheep.jpg")
+```
+]
 
 
 
