@@ -115,8 +115,11 @@ SOME HISTORY
 
 --
 
-- Galileo, Robert Boyle, Isaac Newton (17<sup>th</sup> century AD)
+- Francis Bacon, Rene Descartes, Galileo, Robert Boyle, Isaac Newton (17<sup>th</sup> century AD)
 
+--
+
+- Karl Popper and Thomas Kuhn (20<sup>th</sup> century AD)
 
 ---
 # GUIDELINE
@@ -223,6 +226,15 @@ Many statistical tests rely on *assumption of normality*
 If this assumption is violated the results of these tests become unreliable and we are unable to generalize our findings from the sample data to the overall population with confidence.
 
 
+
+---
+
+```{r, echo=FALSE, fig.height=7}
+knitr::include_graphics("img/distributions.png")
+```
+
+
+
 ---
 ## How to check?
 
@@ -251,6 +263,20 @@ If this assumption is violated the results of these tests become unreliable and 
   6. Pearson chi-square
 
 ---
+
+```{r, echo=FALSE, , fig.height=7}
+knitr::include_graphics("img/qq_plots.png")
+```
+
+
+---
+
+```{r, echo=FALSE, , fig.height=7}
+knitr::include_graphics("img/qq_normality.png")
+```
+
+
+---
 ## What to do if we fail the test?
 
 - transform data
@@ -269,6 +295,11 @@ If this assumption is violated the results of these tests become unreliable and 
 
 
 
+---
+
+```{r, echo=FALSE, , fig.height=7}
+knitr::include_graphics("img/transformed.png")
+```
 
 
 
@@ -500,22 +531,6 @@ class: highlight-last-item
 
 
 ---
-class: inverse, middle, center
-# THANK YOU !
-<style>
-.html-widget {
-    margin: auto;
-}
-</style>
-
-```{r eval = TRUE, echo = FALSE, fig.align="center", fig.width=6}
-# erase this chunk option if you want to include a map
-library(leaflet)
-leaflet() %>% addTiles() %>% setView(lat = 1.29563, lng = 103.77502, zoom = 17)
-```
-
-
----
 ## DO NOT JUMP TO CONCLUSION (TOO FAST)
 
 .pull-left[
@@ -531,6 +546,25 @@ knitr::include_graphics("img/SmallChange.gif")
 knitr::include_graphics("img/sheep.jpg")
 ```
 ]
+
+
+
+---
+class: inverse, middle, center
+# THANK YOU !
+<style>
+.html-widget {
+    margin: auto;
+}
+</style>
+
+```{r eval = TRUE, echo = FALSE, fig.align="center", fig.width=6}
+# erase this chunk option if you want to include a map
+library(leaflet)
+leaflet() %>% addTiles() %>% setView(lat = 1.29563, lng = 103.77502, zoom = 17)
+```
+
+
 
 
 
