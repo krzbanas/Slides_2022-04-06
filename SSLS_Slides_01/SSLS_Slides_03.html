@@ -4,20 +4,20 @@
     <title>Infrared characterization of malaria-infected red blood cells</title>
     <meta charset="utf-8" />
     <meta name="author" content="Krzysztof Banas  National University of Singapore Singapore Synchrotron Light Source" />
-    <script src="SSLS_Slides_02_files/header-attrs/header-attrs.js"></script>
-    <link href="SSLS_Slides_02_files/tile-view/tile-view.css" rel="stylesheet" />
-    <script src="SSLS_Slides_02_files/tile-view/tile-view.js"></script>
-    <link href="SSLS_Slides_02_files/tachyons/tachyons.min.css" rel="stylesheet" />
-    <script src="SSLS_Slides_02_files/xaringanExtra-progressBar/progress-bar.js"></script>
-    <script src="SSLS_Slides_02_files/htmlwidgets/htmlwidgets.js"></script>
-    <script src="SSLS_Slides_02_files/jquery/jquery.min.js"></script>
-    <link href="SSLS_Slides_02_files/leaflet/leaflet.css" rel="stylesheet" />
-    <script src="SSLS_Slides_02_files/leaflet/leaflet.js"></script>
-    <link href="SSLS_Slides_02_files/leafletfix/leafletfix.css" rel="stylesheet" />
-    <script src="SSLS_Slides_02_files/proj4/proj4.min.js"></script>
-    <script src="SSLS_Slides_02_files/Proj4Leaflet/proj4leaflet.js"></script>
-    <link href="SSLS_Slides_02_files/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
-    <script src="SSLS_Slides_02_files/leaflet-binding/leaflet.js"></script>
+    <script src="SSLS_Slides_03_files/header-attrs/header-attrs.js"></script>
+    <link href="SSLS_Slides_03_files/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="SSLS_Slides_03_files/tile-view/tile-view.js"></script>
+    <link href="SSLS_Slides_03_files/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="SSLS_Slides_03_files/xaringanExtra-progressBar/progress-bar.js"></script>
+    <script src="SSLS_Slides_03_files/htmlwidgets/htmlwidgets.js"></script>
+    <script src="SSLS_Slides_03_files/jquery/jquery.min.js"></script>
+    <link href="SSLS_Slides_03_files/leaflet/leaflet.css" rel="stylesheet" />
+    <script src="SSLS_Slides_03_files/leaflet/leaflet.js"></script>
+    <link href="SSLS_Slides_03_files/leafletfix/leafletfix.css" rel="stylesheet" />
+    <script src="SSLS_Slides_03_files/proj4/proj4.min.js"></script>
+    <script src="SSLS_Slides_03_files/Proj4Leaflet/proj4leaflet.js"></script>
+    <link href="SSLS_Slides_03_files/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+    <script src="SSLS_Slides_03_files/leaflet-binding/leaflet.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -366,7 +366,7 @@ datasaurus_dozen %&gt;%
  scale_color_d3("category20")
 ```
 
-![](SSLS_Slides_02_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+![](SSLS_Slides_03_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
 
 
 
@@ -441,6 +441,7 @@ N.A. = 0.4
 &lt;img src="img/visual_overview.png" width="2603" /&gt;
 ]
 
+
 ---
 class: inverse, middle, center
 # OPTIR
@@ -470,7 +471,7 @@ class: inverse, middle, center
 
 ## 
 .pull-right[ 
-&lt;img src="img/visual_overview.png" width="2603" /&gt;
+&lt;img src="img/single_spectra.png" width="1489" /&gt;
 ]
 
 ---
@@ -493,7 +494,7 @@ class: inverse, middle, center
 
 
 .pull-right[ 
-&lt;img src="img/visual_overview.png" width="2603" /&gt;
+&lt;img src="img/imaging.png" width="1239" /&gt;
 ]
 
 
@@ -517,13 +518,79 @@ class: inverse, middle, center
 ]
 
 .pull-right[ 
-&lt;img src="img/visual_overview.png" width="2603" /&gt;
+&lt;img src="img/hyperspectra.png" width="1611" /&gt;
 ]
+
+---
+
+## Hyperspectra
+
+.pull-left[
+
+- QCL laser set to one wavenumber (frequency)
+
+- motorized stage moving in X and Y
+
+- another QCL laser sweep for new position
+
+- spatial distribution of intensity for particular band
+
+- tracking bands shifts
+
+]
+
+.pull-right[ 
+&lt;img src="img/hyperspectra2.png" width="1413" /&gt;
+]
+
+---
+# RESULTS
+
+---
+## Single cell analysis - FTIR
+&lt;img src="img/single_cell_FTIR.png" width="80%" /&gt;
+
+---
+## Single cell analysis - FTIR versus OPTIR
+&lt;img src="img/single_cell_FTIR_OPTIR.png" width="80%" /&gt;
+
+---
+## Amide 1
+
+&lt;img src="img/amide1.png" width="80%" /&gt;
+
+---
+## Amide 1 Peak Shift
+
+&lt;img src="img/amide1_peak_shift.png" width="80%" /&gt;
+
+---
+## Hemozoin Boxplot
+
+&lt;img src="img/hemozoin_boxplot.png" width="80%" /&gt;
+
+---
+## Hemozoin Violin Plot
+
+&lt;img src="img/hemozoin.png" width="80%" /&gt;
+
+---
+## Hemozoin Violin Plot with Statistical Tests
+
+&lt;img src="img/hemozoin_with_tests.png" width="80%" /&gt;
+
 
 
 
 ---
-# RESULTS
+## Statistical Tests Reporting for Frequentist and Bayesians
+
+&lt;img src="img/test_reading.png" width="80%" /&gt;
+---
+class: center, middle
+## More Info
+&lt;img src="img/qr_code.png" width="80%" /&gt;
+
 
 
 
@@ -600,8 +667,8 @@ class: inverse, middle, center
 }
 &lt;/style&gt;
 
-<div id="htmlwidget-a6a477ced3d4b8ccfc15" style="width:432px;height:504px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a6a477ced3d4b8ccfc15">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[1.29563,103.77502],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-bd755fe2ba560e141515" style="width:432px;height:504px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bd755fe2ba560e141515">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[1.29563,103.77502],17,[]]},"evals":[],"jsHooks":[]}</script>
 
 
 

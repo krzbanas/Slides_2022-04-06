@@ -399,6 +399,7 @@ knitr::include_graphics("img/visual_overview.png")
 ```
 ]
 
+
 ---
 class: inverse, middle, center
 # OPTIR
@@ -429,7 +430,7 @@ class: inverse, middle, center
 ## 
 .pull-right[ 
 ```{r, ,  echo=FALSE}
-knitr::include_graphics("img/visual_overview.png")
+knitr::include_graphics("img/single_spectra.png")
 ```
 ]
 
@@ -454,7 +455,7 @@ knitr::include_graphics("img/visual_overview.png")
 
 .pull-right[ 
 ```{r, ,  echo=FALSE}
-knitr::include_graphics("img/visual_overview.png")
+knitr::include_graphics("img/imaging.png")
 ```
 ]
 
@@ -480,14 +481,100 @@ knitr::include_graphics("img/visual_overview.png")
 
 .pull-right[ 
 ```{r, ,  echo=FALSE}
-knitr::include_graphics("img/visual_overview.png")
+knitr::include_graphics("img/hyperspectra.png")
 ```
 ]
+
+---
+
+## Hyperspectra
+
+.pull-left[
+
+- QCL laser set to one wavenumber (frequency)
+
+- motorized stage moving in X and Y
+
+- another QCL laser sweep for new position
+
+- spatial distribution of intensity for particular band
+
+- tracking bands shifts
+
+]
+
+.pull-right[ 
+```{r, ,  echo=FALSE}
+knitr::include_graphics("img/hyperspectra2.png")
+```
+]
+
+---
+# RESULTS
+
+---
+## Single cell analysis - FTIR
+```{r, echo=FALSE,  out.width = "80%"}
+knitr::include_graphics("img/single_cell_FTIR.png")
+```
+
+---
+## Single cell analysis - FTIR versus OPTIR
+```{r, echo=FALSE,  out.width = "80%"}
+knitr::include_graphics("img/single_cell_FTIR_OPTIR.png")
+```
+
+---
+## Amide 1
+
+```{r, echo=FALSE,  out.width = "80%"}
+knitr::include_graphics("img/amide1.png")
+```
+
+---
+## Amide 1 Peak Shift
+
+```{r, echo=FALSE,  out.width = "80%"}
+knitr::include_graphics("img/amide1_peak_shift.png")
+```
+
+---
+## Hemozoin Boxplot
+
+```{r, echo=FALSE,  out.width = "80%"}
+knitr::include_graphics("img/hemozoin_boxplot.png")
+```
+
+---
+## Hemozoin Violin Plot
+
+```{r, echo=FALSE,  out.width = "80%"}
+knitr::include_graphics("img/hemozoin.png")
+```
+
+---
+## Hemozoin Violin Plot with Statistical Tests
+
+```{r, echo=FALSE,  out.width = "80%"}
+knitr::include_graphics("img/hemozoin_with_tests.png")
+```
+
 
 
 
 ---
-# RESULTS
+## Statistical Tests Reporting for Frequentist and Bayesians
+
+```{r, echo=FALSE,  out.width = "80%"}
+knitr::include_graphics("img/test_reading.png")
+```
+---
+class: center, middle
+## More Info
+```{r, echo=FALSE,  out.width = "80%"}
+knitr::include_graphics("img/qr_code.png")
+```
+
 
 
 
