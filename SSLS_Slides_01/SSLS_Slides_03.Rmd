@@ -1,6 +1,6 @@
 ---
 title: "Infrared characterization of malaria-infected red blood cells"
-subtitle: "or statistically counting erythrocites" 
+subtitle: "or statistically counting erythrocytes" 
 author: "Krzysztof Banas <br><span style = 'font-size: 70%;'>National University of Singapore<br>Singapore Synchrotron Light Source</span>"
 date: "SSLS Seminar <br> <br> Virtual by Zoom App, 7 April 2022 14:00"
 output:
@@ -80,6 +80,7 @@ xaringanExtra::use_progress_bar(color = "#0051BA", location = "top")
 
 
 ---
+class: middle
 - bring attention to experiment design
 
 - recall scientific method
@@ -317,11 +318,6 @@ class: inverse, middle, center
 knitr::include_graphics("img/DinoSequentialSmaller.gif")
 ```
 
----
-# Boxplots
-```{r, echo=FALSE}
-knitr::include_graphics("img/boxplots.gif")
-```
 
 
 
@@ -351,6 +347,11 @@ datasaurus_dozen %>%
 ```
 
 
+---
+# Boxplots
+```{r, echo=FALSE}
+knitr::include_graphics("img/boxplots.gif")
+```
 
 
 

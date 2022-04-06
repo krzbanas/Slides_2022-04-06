@@ -24,18 +24,10 @@
     <textarea id="source">
 class: left, middle, inverse, title-slide
 
-.title[
 # Infrared characterization of malaria-infected red blood cells
-]
-.subtitle[
-## or statistically counting erythrocites
-]
-.author[
+## or statistically counting erythrocytes
 ### Krzysztof Banas <br><span style="font-size: 70%;">National University of Singapore<br>Singapore Synchrotron Light Source</span>
-]
-.date[
 ### SSLS Seminar <br> <br> Virtual by Zoom App, 7 April 2022 14:00
-]
 
 ---
 
@@ -124,6 +116,7 @@ top:1em;right:1em;
 
 
 ---
+class:middle
 - bring attention to experiment design
 
 - recall scientific method
@@ -349,9 +342,6 @@ class: inverse, middle, center
 # Warning: DatasauRus
 ![](img/DinoSequentialSmaller.gif)&lt;!-- --&gt;
 
----
-# Boxplots
-![](img/boxplots.gif)&lt;!-- --&gt;
 
 
 
@@ -366,7 +356,7 @@ datasaurus_dozen %&gt;%
  scale_color_d3("category20")
 ```
 
-![](SSLS_Slides_02_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+![](SSLS_Slides_02_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
 
 
 
@@ -400,6 +390,9 @@ datasaurus_dozen %&gt;%
 |x_shape    | 54.26015| 16.76996| 47.83972| 26.93000| -0.0655833|
 
 
+---
+# Boxplots
+![](img/boxplots.gif)&lt;!-- --&gt;
 
 
 
@@ -600,8 +593,8 @@ class: inverse, middle, center
 }
 &lt;/style&gt;
 
-<div id="htmlwidget-a6a477ced3d4b8ccfc15" style="width:432px;height:504px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-a6a477ced3d4b8ccfc15">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[1.29563,103.77502],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-19ae7696bbef6f1aad33" style="width:432px;height:504px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-19ae7696bbef6f1aad33">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[1.29563,103.77502],17,[]]},"evals":[],"jsHooks":[]}</script>
 
 
 
@@ -654,19 +647,6 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
-// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
-// screen reader (see PR #262)
-(function(d) {
-  let res = {};
-  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
-    const t = tr.querySelector('td:nth-child(2)').innerText;
-    tr.querySelectorAll('td:first-child .key').forEach(key => {
-      const k = key.innerText;
-      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
-    });
-  });
-  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
-})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
