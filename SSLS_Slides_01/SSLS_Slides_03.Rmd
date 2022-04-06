@@ -511,7 +511,7 @@ knitr::include_graphics("img/hyperspectra2.png")
 ]
 
 ---
-# RESULTS
+# EXAMPLES
 
 ---
 ## Single cell analysis - FTIR
@@ -571,14 +571,12 @@ knitr::include_graphics("img/test_reading.png")
 ```
 ---
 class: center, middle
+
+
 ## More Info
 ```{r, echo=FALSE,  out.width = "80%"}
 knitr::include_graphics("img/qr_code.png")
 ```
-
-
-
-
 
 
 
