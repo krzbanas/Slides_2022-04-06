@@ -157,7 +157,7 @@ SOME HISTORY
 
 
 ---
-# GUIDELINE
+# ITERATION
 
  1. Define a question
 
@@ -229,7 +229,7 @@ If this assumption is violated the results of these tests become unreliable and 
 
 ---
 
-```{r, echo=FALSE, fig.height=7}
+```{r, echo=FALSE, out.width = "100%"}
 knitr::include_graphics("img/distributions.png")
 ```
 
@@ -264,14 +264,14 @@ knitr::include_graphics("img/distributions.png")
 
 ---
 
-```{r, echo=FALSE, , fig.height=7}
+```{r, echo=FALSE, out.width = "50%"}
 knitr::include_graphics("img/qq_plots.png")
 ```
 
 
 ---
 
-```{r, echo=FALSE, , fig.height=7}
+```{r, echo=FALSE,  out.width = "60%"}
 knitr::include_graphics("img/qq_normality.png")
 ```
 
@@ -297,7 +297,7 @@ knitr::include_graphics("img/qq_normality.png")
 
 ---
 
-```{r, echo=FALSE, , fig.height=7}
+```{r, echo=FALSE,  out.width = "60%"}
 knitr::include_graphics("img/transformed.png")
 ```
 
@@ -305,11 +305,11 @@ knitr::include_graphics("img/transformed.png")
 
 ---
 class: inverse, middle, center
-# DATASAUR
+# DATASAURUS
 
 
 ---
-# Warning: Datasaur
+# Warning: DatasauRus
 ```{r, echo=FALSE}
 knitr::include_graphics("img/DinoSequentialSmaller.gif")
 ```
@@ -374,6 +374,7 @@ knitr::include_graphics("img/visual_overview.png")
 # Classic FTIR = diffraction limit
 
 .pull-left[
+
 ## Abbe formula
 
 $$\delta = \frac{0.612 \lambda}{N.A.}$$
@@ -385,9 +386,10 @@ $\delta$ = 15.3  $\mu$m
 
 ]
 
-## Title
+## Visual Overview
 .pull-right[ 
 ```{r, ,  echo=FALSE}
+
 knitr::include_graphics("img/visual_overview.png")
 ```
 ]
@@ -480,16 +482,8 @@ knitr::include_graphics("img/visual_overview.png")
 
 
 ---
-## SUMMARY
+# RESULTS
 
----
-.bg-washed-orange.b--dark-blue.ba.bw2.br3.shadow-5.ph4.mt5[
-The only way to write good code is to write tons of bad code first. 
-Feeling shame about bad code stops you from getting to good code
-
-.tr[
-— Hadley Wickham
-]]
 
 
 
@@ -529,19 +523,30 @@ class: highlight-last-item
 
 - novel method (optically detected photothermal effect infrared spectroscopy) is viable alternative 
 
+---
+.bg-washed-orange.b--dark-blue.ba.bw2.br3.shadow-5.ph4.mt5[
+If a man will begin with  certainties, he shall end in doubts; but if he will be content to begin  with doubts, he shall end in certainties.
+
+
+
+.tr[
+— Francis Bacon (1605) The Advancement of Learning, Book 1, v. 8
+]]
+
+
 
 ---
 ## DO NOT JUMP TO CONCLUSION (TOO FAST)
 
 .pull-left[
-## Left side
+## 
 ```{r,  echo=FALSE}
-knitr::include_graphics("img/SmallChange.gif")
+knitr::include_graphics("img/datasauRus.gif")
 ```
 ]
 
 .pull-right[  
-## Right side
+## 
 ```{r, ,  echo=FALSE}
 knitr::include_graphics("img/sheep.jpg")
 ```
