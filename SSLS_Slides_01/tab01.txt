@@ -1,0 +1,6 @@
+Number of Trials, Heads, Tails,  Tails Probability
+2, 2, 0, 0%
+6, 3, 3, 50%
+10, 4, 6, 60%
+20, 9, 11, 55%
+100, 51, 49, 49%

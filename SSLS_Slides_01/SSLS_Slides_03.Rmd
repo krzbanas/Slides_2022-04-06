@@ -69,7 +69,6 @@ xaringanExtra::use_tachyons()
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 library(tidyverse) # load tidyverse package
-library(babynames) # load babynames package
 library(leaflet) # uncomment to use if you install
 library(datasauRus)
 library(ggsci)
