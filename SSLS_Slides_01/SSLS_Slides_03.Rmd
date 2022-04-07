@@ -56,6 +56,10 @@ xaringanExtra::use_logo(
 xaringanExtra::use_tile_view()
 ```
 
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
 
 ```{r xaringan-tachyons, echo=FALSE}
 xaringanExtra::use_tachyons()
@@ -98,6 +102,7 @@ class: inverse, middle, center
 
 
 ---
+class: middle
 SOME HISTORY
 
 - ancient Greeks (7<sup>th</sup>-3<sup>rd</sup> century BC)
@@ -262,13 +267,6 @@ knitr::include_graphics("img/distributions.png")
   5. Cramer-von Mises
   
   6. Pearson chi-square
-
----
-class: center
-## Distributions
-```{r, echo=FALSE, out.width = "50%"}
-knitr::include_graphics("img/qq_plots.png")
-```
 
 
 ---
@@ -511,9 +509,6 @@ knitr::include_graphics("img/hyperspectra2.png")
 ]
 
 ---
-# EXAMPLES
-
----
 ## Single cell analysis - FTIR
 ```{r, echo=FALSE,  out.width = "80%"}
 knitr::include_graphics("img/single_cell_FTIR.png")
@@ -608,13 +603,15 @@ class: highlight-last-item
 
 --
 
-- single cells infrared characterization is not recommended with classis FTIR microscope due to diffraction limit
+- single cells infrared characterization is not recommended with classic FTIR microscope due to diffraction limit
 
 --
 
 - novel method (optically detected photothermal effect infrared spectroscopy) is viable alternative 
 
 ---
+class:middle
+
 .bg-washed-orange.b--dark-blue.ba.bw2.br3.shadow-5.ph4.mt5[
 If a man will begin with  certainties, he shall end in doubts; but if he will be content to begin  with doubts, he shall end in certainties.
 
